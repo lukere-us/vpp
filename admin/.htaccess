@@ -1,0 +1,22 @@
+
+                ####### BLOCK DIRECTORY LISTING #########
+Options -Indexes
+
+RewriteEngine On
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+
+
+RewriteRule ^dashbord/$ index.php?url=backoffice [QSA,L]
+RewriteRule ^(.*?)\.(php|css|js|jpg|jpeg|png|pdf)$ - [L]
+RewriteRule ^([^/]+)/?$ index.php?url=$1&$2 [QSA,NC,L]
+RewriteRule ^([^/]+)/([^/]+)/?$ index.php?url=$1/$2&$3 [QSA,NC,L]
+RewriteRule ^(.*)$ index.php?url=$1 [L]
+
+
+#RewriteRule !\.(js|ico|gif|jpg|png|css|html|swf|flv|xml)$ index.php?url=backoffice/$1 [QSA,L]

@@ -1,0 +1,189 @@
+
+#main_vehicleCategoru{
+    margin:0 30px;
+    width:100%;
+}
+.vehCat{
+    float:left;
+    margin:0 125px 0 0;
+}
+#newVehicle{
+    width: 900px;
+    margin: 35px auto;
+    float: left;
+}
+.newVehDiv{
+    float: left;
+    margin: 0 0 0 50px;
+    width: 150px;
+}
+
+.newVehDiv select,input{
+    width: 150px;
+}
+#addNewSub_1{
+    width: 1000px;
+    margin: 35px auto;
+}
+#addNewSub_2{
+    width: 100%;
+    float: left;
+}
+#monthList{
+    float: right;
+    margin: 10px 0 0;
+}
+#monthList li{
+    border: thin solid;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    list-style: none outside none;
+    margin: 0 3px 0 0;
+    padding: 3px;
+    text-decoration: none !important;
+    background-color: #99CCFF;
+}
+#monthList li:visited{
+    background-color: red;
+}
+#main_menu{
+
+}
+
+#main_menu li{
+
+}
+
+#main_menu ul{
+
+}
+#main_menu ul li{
+
+}
+#addonLeft{
+    float:left;
+    margin:0 162px 0 62px;
+}
+#addonRight{
+
+}
+.spanCompSetting{
+    float: left;
+    width: 175px;
+}
+.spanCompSetting ul{
+    float: left;
+    list-style: none outside none;
+}
+.spanCompSetting ul li input{
+    width: 0px !important;
+}
+.spanCompSetting label{
+    width: 100 !important;
+    text-align: left !important;
+}
+.feedback_success{
+    border: thin solid #008000;
+    color: #008000;
+    font-family: 'Trebuchet MS';
+    font-size: 12px;
+    margin: 0 0 5px;
+    padding: 13px;
+}
+.feedback_error{
+    border: thin solid #FF0000;
+    color: #FF0000;
+    font-size: 12px;
+    padding: 13px;
+    font-family: 'Trebuchet MS';
+    margin: 0 0 5px;
+}
+#vehProfImage{
+    border: medium solid #CCCCCC;
+    float: left;
+    padding: 5px;
+    width: 300px;
+}
+#uploadVehprofImg{
+    float: left;
+    font-family: 'Trebuchet MS';
+    margin: 0 0 0 20px;
+    text-align: center;
+    width: 370px;
+}
+#uploadVehprofImg input{
+    width: 187px;
+}
+#uploadVehprofImg button{
+    background-color: #EAEAE6;
+    border: 1px solid #000000;
+    cursor: pointer;
+    float: right;
+    font-family: 'Trebuchet MS';
+    margin: 15px 0 0 5px;
+    padding: 2px;
+}
+.spanRate label{
+    width: 150px !important;
+}
+.totDiv{
+    background-color: #416c9b;
+    border: thin solid #858585;
+    color: #fff;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    height: 56px;
+    margin: 0 34px 0 0;
+    text-align: center;
+    width: 116px;
+}
+.chMain{
+    float: left;
+    width: 100%;
+}
+#totVal{
+    margin: 0 auto 31px;
+    text-align: center;
+    width: 460px;
+}
+.totValNum{
+    float: left;
+    font-size: 16px;
+    margin: 9px 0 0;
+    width: 100%;
+}
+.totTitle{
+    float: left;
+    width: 100%;
+}
+#waitingDiv{
+    background-color: #FFFFFF;
+    border: medium solid #B0E0E6;
+    bottom: 2%;
+    height: 43px;
+    left: 42%;
+    position: absolute;
+    text-align: center;
+    width: 154px;
+    z-index: 1000;
+}
+#waitingText{
+    float: left;
+    margin: 4px 0 0 7px;
+    width: 100%;
+}
+#overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#selectMonth{
+    background-color: gold !important;
+}

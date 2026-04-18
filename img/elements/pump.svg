@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="42.75px" height="86.75px" viewBox="0 0 42.75 86.75" enable-background="new 0 0 42.75 86.75" xml:space="preserve">
+<polygon fill="#919396" points="0.758,54.525 0.758,83.693 15.964,59.193 "/>
+<polygon fill="#919396" points="41.467,54.525 41.467,83.693 26.262,59.193 "/>
+<g>
+	<path class="bg-path" fill="#ED1C24" d="M25.77,78.69v4.01c0,1.66-1.34,3-3,3h-4.3c-1.66,0-3-1.34-3-3v-4.01c0-1.66,1.34-3,3-3h4.3
+		C24.43,75.69,25.77,77.03,25.77,78.69z"/>
+	<path class="bg-path" fill="#ED1C24" d="M41.76,30.26v24.26c0,4.63-3.75,8.37-8.37,8.37H9.13c-4.63,0-8.37-3.74-8.37-8.37V30.26
+		c0-4.62,3.74-8.37,8.37-8.37h24.26C38.01,21.89,41.76,25.64,41.76,30.26z"/>
+	<path class="bg-path" fill="#ED1C24" d="M25.77,67.1v4.01c0,1.66-1.34,3-3,3h-4.3c-1.66,0-3-1.34-3-3V67.1c0-1.65,1.34-3,3-3h4.3
+		C24.43,64.1,25.77,65.45,25.77,67.1z"/>
+	<path class="bg-path" fill="#ED1C24" d="M25.77,14.24v4.01c0,1.66-1.34,3-3,3h-4.3c-1.66,0-3-1.34-3-3v-4.01c0-1.66,1.34-3,3-3h4.3
+		C24.43,11.24,25.77,12.58,25.77,14.24z"/>
+	<path class="bg-path" fill="#ED1C24" d="M25.81,4.18v3.01c0,1.66-1.34,3-3,3h-4.3c-1.65,0-3-1.34-3-3V4.18c0-1.66,1.35-3,3-3h4.3
+		C24.47,1.18,25.81,2.52,25.81,4.18z"/>
+	<circle fill="none" stroke="#000000" stroke-width="0.554" stroke-miterlimit="10" cx="20.619" cy="42.222" r="8.604"/>
+	<circle fill="none" stroke="#000000" stroke-width="0.7746" stroke-miterlimit="10" cx="20.62" cy="42.222" r="12.029"/>
+	<circle fill="none" stroke="#000000" stroke-miterlimit="10" cx="20.62" cy="42.222" r="15.529"/>
+	<rect x="12.207" y="41.724" transform="matrix(-0.7469 0.665 -0.665 -0.7469 64.2662 59.5136)" width="17.199" height="0.528"/>
+	<rect x="12.207" y="41.724" transform="matrix(0.7469 0.665 -0.665 0.7469 33.1865 -3.2073)" width="17.199" height="0.528"/>
+	<rect x="0.758" y="42.127" width="41.002" height="0.528"/>
+</g>
+</svg>
