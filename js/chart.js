@@ -77,12 +77,12 @@
         moist = [];
         for (i = 0; i < n; i++) {
             crude.push(
-                5.8 +
-                    smoothWave(i, n, 0.4, 1.35) +
-                    0.35 * Math.sin(i * 1.7 + 1) +
-                    (span === '1h' ? 0.15 * Math.sin(i * 3) : 0)
+                0.6 +
+                    smoothWave(i, n, 0.4, 0.12) +
+                    0.03 * Math.sin(i * 1.7 + 1) +
+                    (span === '1h' ? 0.02 * Math.sin(i * 3) : 0)
             );
-            rffa.push(1.85 + smoothWave(i, n, 2.1, 0.35) + 0.08 * Math.sin(i * 0.9));
+            rffa.push(0.05 + smoothWave(i, n, 2.1, 0.003) + 0.0006 * Math.sin(i * 0.9));
             soaps.push(0.42 + smoothWave(i, n, 0.8, 0.08) + 0.02 * Math.sin(i * 1.2));
             moist.push(0.14 + smoothWave(i, n, 1.2, 0.04) + 0.015 * Math.cos(i * 0.7));
         }
@@ -115,7 +115,7 @@
                         data: data.crude,
                         borderColor: '#e6c229',
                         backgroundColor: 'rgba(230, 194, 41, 0.06)',
-                        yAxisID: 'y',
+                        yAxisID: 'y1',
                         tension: 0.35,
                         borderWidth: 2,
                         pointRadius: 0,
@@ -126,14 +126,14 @@
                         data: data.rffa,
                         borderColor: '#3ecf6e',
                         backgroundColor: 'transparent',
-                        yAxisID: 'y',
+                        yAxisID: 'y1',
                         tension: 0.35,
                         borderWidth: 2,
                         pointRadius: 0,
                         pointHoverRadius: 4
                     },
                     {
-                        label: 'Refined Oil Soaps',
+                        label: 'Crude Oil Moisture',
                         data: data.soaps,
                         borderColor: '#e55353',
                         backgroundColor: 'transparent',
@@ -177,31 +177,37 @@
                     },
                     y: {
                         type: 'linear',
-                        display: true,
-                        position: 'left',
+                        display: false,
+                        position: 'right',
                         min: 0,
                         max: 8,
                         title: {
-                            display: true,
-                            text: 'FFA (%)',
-                            color: chartTextColor()
-                        },
-                        ticks: { color: chartTextColor() },
-                        grid: { color: chartGridColor() }
-                    },
-                    y1: {
-                        type: 'linear',
-                        display: true,
-                        position: 'right',
-                        min: 0,
-                        max: 0.8,
-                        title: {
-                            display: true,
-                            text: 'Soaps / Moisture (%)',
+                            display: false,
+                            text: 'FFA/Moisture',
                             color: chartTextColor()
                         },
                         ticks: { color: chartTextColor() },
                         grid: { drawOnChartArea: false }
+                    },
+                    y1: {
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                        min: 0,
+                        max: 0.8,
+                        title: {
+                            display: true,
+                            text: 'FFA/Moisture',
+                            color: chartTextColor()
+                        },
+                        ticks: {
+                            color: chartTextColor(),
+                            stepSize: 0.1,
+                            callback: function (value) {
+                                return Number(value).toFixed(1).replace(/\.0$/, '');
+                            }
+                        },
+                        grid: { color: chartGridColor() }
                     }
                 }
             }
@@ -250,7 +256,7 @@
     function updateLegendAndSparks(data) {
         var series = [data.crude, data.rffa, data.soaps, data.moist];
         var colors = ['#e6c229', '#3ecf6e', '#e55353', '#5eb3ff'];
-        var decimals = [1, 1, 2, 2];
+        var decimals = [1, 2, 2, 2];
         var last = data.labels.length - 1;
         var i;
         var val;
@@ -309,7 +315,7 @@
             return;
         }
         var d = currentTrendData;
-        var rows = [['Time', 'Crude-Oil FFA (%)', 'Refined Oil FFA (%)', 'Refined Oil Soaps (%)', 'Refined Oil Moisture (%)']];
+        var rows = [['Time', 'Crude-Oil FFA (%)', 'Refined Oil FFA (%)', 'Crude Oil Moisture', 'Refined Oil Moisture (%)']];
         var i;
         for (i = 0; i < d.labels.length; i++) {
             rows.push([
