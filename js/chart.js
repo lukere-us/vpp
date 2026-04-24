@@ -78,9 +78,9 @@
         for (i = 0; i < n; i++) {
             crude.push(
                 0.6 +
-                    smoothWave(i, n, 0.4, 0.12) +
-                    0.03 * Math.sin(i * 1.7 + 1) +
-                    (span === '1h' ? 0.02 * Math.sin(i * 3) : 0)
+                smoothWave(i, n, 0.4, 0.12) +
+                0.03 * Math.sin(i * 1.7 + 1) +
+                (span === '1h' ? 0.02 * Math.sin(i * 3) : 0)
             );
             rffa.push(0.05 + smoothWave(i, n, 2.1, 0.003) + 0.0006 * Math.sin(i * 0.9));
             soaps.push(0.42 + smoothWave(i, n, 0.8, 0.08) + 0.02 * Math.sin(i * 1.2));
@@ -133,7 +133,7 @@
                         pointHoverRadius: 4
                     },
                     {
-                        label: 'Crude Oil Moisture',
+                        label: 'Crude Oil Mositure',
                         data: data.soaps,
                         borderColor: '#e55353',
                         backgroundColor: 'transparent',

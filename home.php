@@ -495,7 +495,7 @@ include_once 'config.php';
                             </div>
                             <div class="oil-trends-legend-row" data-series="2">
                                 <span class="oil-trends-swatch oil-trends-swatch--soaps"></span>
-                                <span class="oil-trends-legend-name">Refined Oil Soaps</span>
+                                <span class="oil-trends-legend-name">Crude Oil Mositure</span>
                                 <span class="oil-trends-legend-value oil-trends-legend-value--soaps"
                                     id="oilTrendsVal2">—</span>
                                 <div class="oil-trends-spark"><canvas id="oilTrendsSpark2"></canvas></div>
